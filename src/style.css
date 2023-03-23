@@ -1,1 +1,11 @@
 /* init */
+.about {
+    border-top: solid 3px red;
+    border-bottom: solid 3px green;
+    text-align: center;
+    position: fixed;
+    top: 150px;
+    right: -130px;
+    width: 600px;
+    transform: rotate(45deg);
+}
