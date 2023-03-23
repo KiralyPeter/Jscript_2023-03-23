@@ -1,4 +1,12 @@
-// init
+/*
+* File: app.js
+* Author: Király Péter
+* Copyright: 2023, Király Péter
+* Group: Szoft 1/2/E (I-2 E)
+* Date: 2023-03-23
+* Github: https://github.com/KiralyPeter/Jscript_2023-03-23
+* Licenc: GNU GPL
+*/
 
 const doc = {
      tbody: document.querySelector("#tbody")
