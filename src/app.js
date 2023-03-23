@@ -11,6 +11,7 @@ const state = {
 
 getTodos();
 
+// lekérdezi a Todos-t
 function getTodos(){
     // host + végpont
     let url = state.host + "todos"
@@ -23,6 +24,7 @@ function getTodos(){
     }); 
 }
 
+// A lekérdezett Todos-t kirendereli a táblázatba
 function render(){
     let rows = ""; // kezdetben üres
     state.todos.forEach((todo) => {
@@ -37,6 +39,6 @@ function render(){
         // console.log(todo.name);  
     });
 
-    tbody.innerHTML = rows;
+    doc.tbody.innerHTML = rows;
 
 }
