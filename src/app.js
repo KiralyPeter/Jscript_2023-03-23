@@ -17,6 +17,26 @@ function getTodos(){
     fetch(url) // fetch - asszinkron utasítás...
     .then(response => response.json())
     .then(result => {
-        console.log(result);
+        // console.log(result);
+        state.todos = result;
+        render();
     }); 
+}
+
+function render(){
+    let rows = ""; // kezdetben üres
+    state.todos.forEach((todo) => {
+        // `` = változó behelyettesítés (AltGR + 7)
+        rows += `
+            <tr>
+                <td>${todo.id}</td>
+                <td>${todo.name}</td>
+                <td>${todo.ready}</td>
+            </tr>
+        `; 
+        // console.log(todo.name);  
+    });
+
+    tbody.innerHTML = rows;
+
 }
